@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Carrera</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- header design -->
+    <header>
+        <a href="#" class="logo">Tu <span>Carrera</span></a>
+        <ul class="navlist">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="universidades.html" class="active">Universidades</a></li>
+            <li><a href="carreras.html">Carreras</a></li>
+            <li><a href="recursos.html">Recursos</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+        <div class="bx bx-menu" id="menu-icon">
+        </div>
+    </header>
+
+    <!-- first section -->
+    <section class="introduction">
+        <div class="introduction-text">
+            <h3>Universidades e Institutos en <span>Uruguay</span></h3>
+            <p>En "TuCarrera", comprendemos que la elección de una institución educativa es un paso crucial en el 
+                camino hacia un futuro académico exitoso. Es por eso que hemos creado esta página para 
+                proporcionarte información valiosa y completa sobre las opciones disponibles en el país. </p>
+            <p>Nuestra plataforma está diseñada para facilitar tu proceso de búsqueda y exploración, 
+                ofreciéndote una lista cuidadosamente seleccionada de universidades e institutos que se adaptan a 
+                diversos intereses y aspiraciones profesionales. Creemos que cada estudiante es único, y nuestro 
+                objetivo es ayudarte a encontrar la institución que mejor encaje con tus metas y pasiones.</p>
+            <p>En esta página, encontrarás una amplia variedad de opciones académicas, desde prestigiosas 
+                universidades hasta institutos especializados, todas con el compromiso de ofrecer una educación 
+                de calidad y oportunidades para el crecimiento personal y profesional. </p>
+            <p> Nuestro equipo se ha dedicado a recopilar información detallada sobre cada institución, incluyendo 
+                programas de estudio, requisitos de admisión, recursos disponibles y testimonios de estudiantes. 
+                Además, podrás utilizar nuestras herramientas de búsqueda y filtros para personalizar tu 
+                exploración y encontrar las opciones que mejor se ajusten a tus necesidades.</p>
+        </div>
+    </section>
+
+    <!-- universities -->
+
+    <!-- University Page Markup -->
+    <section class="university-page">
+        <div class="uni-filter">
+            <span class="filter-item active-filter" data-filter="all">Todas</span>
+            <span class="filter-item" data-filter="public">Públicas</span>
+            <span class="filter-item" data-filter="private">Privadas</span>
+          </div>
+          <div class="uni-filter">
+            <span class="filter-item" data-filter="north">Litoral Norte</span>
+            <span class="filter-item" data-filter="south">Litoral Sur</span>
+            <span class="filter-item" data-filter="metropolitana">Metropolitana</span>
+            <span class="filter-item" data-filter="noreste">Noreste</span>
+            <span class="filter-item" data-filter="centre">Centro</span>
+            <span class="filter-item" data-filter="east">Este</span>
+          </div>
+          <div class="uni-filter">
+            <span class="filter-item" data-filter="science">Ciencias y Tecnología</span>
+            <span class="filter-item" data-filter="health">Salud</span>
+            <span class="filter-item" data-filter="art">Artes y Humanidades</span>
+            <span class="filter-item" data-filter="social">Ciencias Sociales</span>
+            <span class="filter-item" data-filter="enginnering">Ingeniería</span>
+          </div>
+
+        <div class="universities-content">
+
+            <div class="row" data-filter="all private north noreste metropolitana science health art social">
+                <img src="img/claeh.jpg">
+                <div class="layer">
+                    <h5>Universidad CLAEH</h5>
+                    <p>La Universidad CLAEH (UCLAEH) es una organización de la sociedad civil con identidad 
+                        universitaria. Humanista e independiente de toda religión, ideología y partido político, 
+                        articula la intervención social y la enseñanza.</p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+    
+            <div class="row" data-filter="all public south east north metropolitana noreste science health art social enginnering">
+                <img src="img/udelar.jpg">
+                <div class="layer">
+                    <h5>Universidad de la República</h5>
+                    <p>La Universidad de la República (UDELAR) es la institución de educación superior y de 
+                        investigación más grande de Uruguay. Se trata de una universidad de carácter público, 
+                        autónoma y cogobernada por sus docentes, estudiantes y egresados. </p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="row" data-filter="all public south north metropolitana noreste science enginnering">
+                <img src="img/utec.jpg">
+                <div class="layer">
+                    <h5>Universidad Tecnológica</h5>
+                    <p>Es una universidad orientada a la investigación e innovación. Comprometida con los 
+                        lineamientos estratégicos del país, con el objetivo de hacer más equitativo el acceso educación terciaria, especialmente 
+                        en el interior del país.</p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="row" data-filter="all private south east metropolitana science health art social enginnering">
+                <img src="img/ude.jpg">
+                <div class="layer">
+                    <h5>Universidad de la Empresa</h5>
+                    <p>La Universidad de la Empresa es una universidad privada, laica y con fuerte vínculo con el 
+                        sector empresarial. Desde su reconocimiento ha estado en contínuo crecimiento siendo en 
+                        los últimos años la Universidad de mayor crecimiento. </p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="row" data-filter="all private north east metropolitana science health art social enginnering">
+                <img src="img/ucu.jpg">
+                <div class="layer">
+                    <h5>Universidad Católica del Uruguay</h5>
+                    <p>La Universidad Católica del Uruguay es la primera universidad privada y religiosa del país. 
+                        Es una institución de educación superior comprometida con la excelencia, la construcción 
+                        de una sociedad más justa y humana y la evangelización de nuestra cultura.
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="row" data-filter="all private metropolitana science health art social enginnering">
+                <img src="img/um.jpg">
+                <div class="layer">
+                    <h5>Universidad de Montevideo</h5>
+                    <p>La Universidad de Montevideo es una universidad de identidad cristiana abierta a personas 
+                        de todas las creencias. Está inspirada en las enseñanzas de san Josemaría Escrivá, sobre 
+                        el valor del trabajo bien hecho, el espíritu de servicio, el amor a la libertad y la 
+                        promoción de la familia. </p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="row" data-filter="all private metropolitana science health art social enginnering">
+                <img src="img/ort.jpg">
+                <div class="layer">
+                    <h5>Universidad ORT</h5>
+                    <p>La Universidad ORT Uruguay es la mayor universidad privada del país, con más de 12.000 
+                        estudiantes en cinco facultades e institutos. Es una asociación civil sin fines de lucro 
+                        miembro de World ORT, una de las mayores organizaciones educativas no-gubernamentales en 
+                        el mundo, con más de 250.000 estudiantes.</p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="row" data-filter="all private metropolitana social">
+                <img src="img/iuef.jpg">
+                <div class="layer">
+                    <h5>Instituto Universitario Elbio Fernández</h5>
+                    <p>El IUEF tiene como foco principal la formación 
+                        académica profesional de calidad, que articule los componentes de enseñanza, investigación 
+                        y extensión. Su énfasis está puesto en la relación teoría-práctica de las propuestas 
+                        académicas, anclaje en la cultura y en la interdisciplinariedad</p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+  
+
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-content">
+            <h3>Tu <span> Carrera</span></h3>
+            <p>Mantente informado y siguenos en nuestras redes sociales</p>
+            <ul class="socials">
+                <li><a href="#"><i class='bx bxl-instagram' ></i></a></li>
+                <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
+                <li><a href="#"><i class='bx bx-envelope' ></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

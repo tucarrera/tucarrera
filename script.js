@@ -1,6 +1,6 @@
 const header = document.querySelector("header");
 window.addEventListener("scroll", function () {
-  header.classList.toggle("sticky", window.scrollY > 100);
+  header.classList.toggle("sticky", window.scrollY > 30);
 });
 
 let menu = document.querySelector("#menu-icon");
@@ -101,4 +101,38 @@ function obtenerArea(resultado) {
         E: 'administración, gestión de proyectos o emprendimiento'
     };
     return areas[resultado];
+}
+
+
+// var acc = document.getElementsByClassName("accordion");
+// var i;
+// for(i = 0; i < acc.lenght; i++){
+//   acc[i].addEventListener("click", function(){
+//     this.classList.toggle("active");
+
+//     var pannel = this.nextElementSibiling;
+
+//     if (pannel.style.display === "block") {
+//       pannel.style.display = "none";
+//     } else {
+//       pannel.style.display = "block";
+//     }
+//   });
+// }
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+
+    var panel = this.nextElementSibling; // Fixed typo here
+
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
 }

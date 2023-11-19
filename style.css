@@ -76,9 +76,9 @@ section{
     position: relative;
     height: 100vh;
     width: 100%;
-    /* background-image: url(img/careerchoice.jpg); */
+    /* background-image: url(img/background.png);
     background-size: cover;
-    background-position: center;
+    background-position: center; */
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -137,6 +137,7 @@ section{
     padding: 12px 28px;
     background: var(--main-color);
     border-radius: 5px;
+    margin-top: 10px;
     color: #fff;
     font-size: 1rem;
     letter-spacing: 1px;
@@ -508,14 +509,7 @@ footer {
     font-size: 3rem;
     font-weight: 700;
     line-height: 1.1;
-  }
-  .introduction p{
-    text-align: justify;
-    color: var(--second-color);
-    font-size: var(--p-font);
-    font-weight: 500;
-    line-height: 1.8;
-    margin-bottom: 15px;
+    margin-bottom: 0;
   }
   
   .university-page {
@@ -729,5 +723,59 @@ button:hover{
     margin-top: 20px;
     font-size: 2rem;
     font-weight: bold;
+}
+
+
+.wrapper{
+    max-width: 75%;
+    margin: auto;
+
+}
+.wrapper > p,
+.wrapper > h1{
+    margin: 1.5rem 0;
+    text-align: center;
+
+}
+
+.wrapper > h1{
+    letter-spacing: 1px;
+}
+
+.accordion{
+    background-color: white;
+    color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 2rem 2.5rem;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bold;
+}
+
+.accordion i{
+    font-size: 1.6rem;
+}
+.active, .accordion:hover{
+    background-color: #f1f7f5;
+}
+
+.pannel{
+    padding: 0 2rem 2.5rem 2rem;
+    background-color: white;
+    overflow: hidden;
+    background-color: #f1f7f5;
+    display: none;
+}
+
+.pannel p{
+    color: rgba(0,0,0,0.7);
+    font-size: 1.2rem;
+    line-height: 1.4;
 }
 

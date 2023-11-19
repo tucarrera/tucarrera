@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Carrera</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <style>
+.career {
+    margin-top: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+/* Article box styling */
+.career-box {
+    flex: 0 0 calc(33.33% - 2rem); /* Adjusted width for three career in a row with some margin */
+    margin: 0 1rem; /* Added margin to create space between career */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 2rem; /* Added margin at the bottom for spacing */
+}
+
+
+/* Hover effect on article box */
+.career-box:hover {
+    transform: translateY(-5px);
+}
+
+.career-cover {
+    width: 800px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.career-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 1rem;
+}
+
+.career-description {
+    color: #555;
+    margin: 0 1rem 1rem;
+}
+
+.btn-Go {
+    display: block;
+    margin: 0 1rem 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #29339B;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Hover effect on the Leer Más... button */
+.btn-Go:hover {
+    background-color: #dcdeff;
+}
+    </style>
+
+</head>
+<body>
+    
+    <!-- header design -->
+    <header>
+        <a href="index.html" class="logo">Tu <span>Carrera</span></a>
+        <ul class="navlist">
+            <li><a href="index.html" >Inicio</a></li>
+            <li><a href="universidades.html">Universidades</a></li>
+            <li><a href="carreras.html" class="active">Carreras</a></li>
+            <li><a href="recursos.html">Recursos</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+
+        <div class="bx bx-menu" id="menu-icon">
+
+        </div>
+
+    </header>
+
+    <section class="career">
+        <div class="blog-container">
+
+            <div class="career-box">
+                <img class="career-cover" src="img/ade.jpg" alt="Article 1 Cover">
+                <div class="career-title">Administración de Empresas</div>
+                <a class="btn-Go" href="adminstracion.html">Leer Más...</a>
+            </div>
+
+            <div class="career-box">
+                <img class="career-cover" src="img/contabilidad.jpg" alt="Article 2 Cover">
+                <div class="career-title">Contabilidad</div>
+                <a class="btn-Go" href="contabilidad.html">Leer Más...</a>
+            </div>
+
+            <div class="career-box">
+                <img class="career-cover" src="img/ingcivil.jpg" alt="Article 3 Cover">
+                <div class="career-title">Ingerniería Civil</div>
+                <a class="btn-Go" href="ingcivil.html">Leer Más...</a>
+            </div>
+
+            <div class="career-box">
+                <img class="career-cover" src="img/derecho.jpg" alt="Article 4 Cover">
+                <div class="career-title">Abogacia</div>
+                <a class="btn-Go" href="derecho.html">Leer Más...</a>
+            </div>
+
+            <div class="career-box">
+                <img class="career-cover" src="img/psicologia.jpg" alt="Article 4 Cover">
+                <div class="career-title">Psicología</div>
+                <a class="btn-Go" href="psicologia.html">Leer Más...</a>
+            </div>
+
+            <div class="career-box">
+                <img class="career-cover" src="img/marketing.jpg" alt="Article 4 Cover">
+                <div class="career-title">Marketing</div>
+                <a class="btn-Go" href="marketing.html">Leer Más...</a>
+            </div>
+
+            <div class="career-box">
+                <img class="career-cover" src="img/arquitectura.jpg" alt="Article 4 Cover">
+                <div class="career-title">Arquitectura</div>
+                <a class="btn-Go" href="arquitectura.html">Leer Más...</a>
+            </div>
+
+            <div class="career-box">
+                <img class="career-cover" src="img/diseño.jpg" alt="Article 4 Cover">
+                <div class="career-title">Diseño Gráfico</div>
+                <a class="btn-Go" href="diseño.html">Leer Más...</a>
+            </div>
+
+
+            <div class="career-box">
+                <img class="career-cover" src="img/odontologia.jpg" alt="Article 4 Cover">
+                <div class="career-title">Odontología</div>
+                <a class="btn-Go" href="odontologia.html">Leer Más...</a>
+            </div>
+
+            <div class="career-box">
+                <img class="career-cover" src="img/inginformatica.jpg" alt="Article 4 Cover">
+                <div class="career-title">Ingeniería Informática</div>
+                <a class="btn-Go" href="inginformatica.html">Leer Más...</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <h3>Tu <span> Carrera</span></h3>
+            <p>Mantente informado y siguenos en nuestras redes sociales</p>
+            <ul class="socials">
+                <li><a href="https://instagram.com/tucarrerauy?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr"><i class='bx bxl-instagram' ></i></a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=61553741761760"><i class='bx bxl-facebook'></i></a></li>
+                <li><a href="mailto:tucarrerauy@gmail.com"><i class='bx bx-envelope' ></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
